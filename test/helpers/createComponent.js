@@ -5,8 +5,12 @@
  * @see http://simonsmith.io/unit-testing-react-components-without-a-dom/
  * @author somonsmith
  */
-import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+
+// Add missing methods to phantom.js
+import './pack/phantomjs-shims';
+
+import React from 'react/addons';
+const TestUtils = React.addons.TestUtils;
 
 /**
  * Get the shallow rendered component
