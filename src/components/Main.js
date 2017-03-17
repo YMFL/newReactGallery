@@ -16,6 +16,8 @@ imageDatas=(function genImageUrl(imageDatasArr) {
     return imageDatasArr;
 })(imageDatas)
 
+
+
 class AppComponent extends React.Component {
     render() {
         return (
