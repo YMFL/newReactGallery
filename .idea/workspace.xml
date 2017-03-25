@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12f39c6e-0419-43a5-a312-84ac556bd7f8" name="Default" comment="添加注释">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="12f39c6e-0419-43a5-a312-84ac556bd7f8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/GalleryByReactApp.js" afterPath="$PROJECT_DIR$/src/components/GalleryByReactApp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,8 +34,8 @@
       <file leaf-file-name="GalleryByReactApp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/GalleryByReactApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="344" column="68" lean-forward="true" selection-start-line="344" selection-start-column="68" selection-end-line="344" selection-end-column="68" />
+            <state relative-caret-position="473">
+              <caret line="350" column="16" lean-forward="true" selection-start-line="350" selection-start-column="16" selection-end-line="350" selection-end-column="16" />
               <folding>
                 <element signature="e#266#541#0" expanded="false" />
                 <element signature="e#851#2485#0" expanded="false" />
@@ -259,7 +257,7 @@
       <workItem from="1490009415268" duration="842000" />
       <workItem from="1490101512421" duration="337000" />
       <workItem from="1490278785568" duration="597000" />
-      <workItem from="1490417380166" duration="18139000" />
+      <workItem from="1490417380166" duration="18166000" />
     </task>
     <task id="LOCAL-00001" summary="yqh">
       <created>1489770794035</created>
@@ -282,11 +280,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490433039421</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加注释">
+      <created>1490435746838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490435746838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28140000" />
+    <option name="totallyTimeSpent" value="28167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -678,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/GalleryByReactApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="344" column="68" lean-forward="true" selection-start-line="344" selection-start-column="68" selection-end-line="344" selection-end-column="68" />
+        <state relative-caret-position="473">
+          <caret line="350" column="16" lean-forward="true" selection-start-line="350" selection-start-column="16" selection-end-line="350" selection-end-column="16" />
           <folding>
             <element signature="e#266#541#0" expanded="false" />
             <element signature="e#851#2485#0" expanded="false" />
