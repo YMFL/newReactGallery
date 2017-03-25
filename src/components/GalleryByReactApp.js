@@ -198,7 +198,7 @@ var GalleryByReactApp = React.createClass({
         };
 
         // 取出要布局上侧的图片的状态信息
-        // 随机获取出:除了中间位置图片 中的随机一张
+        // 随机获取出:除了中间位置图片 中的随机一张  topImgSpliceIndex为这张图片的位置，放回图片的时候要用到
         topImgSpliceIndex = Math.ceil(Math.random() * (imgsArrangeArr.length - topImgNum));
         //截取这一张，如果topImgNum为0 则不截取
         imgsArrangeTopArr = imgsArrangeArr.splice(topImgSpliceIndex, topImgNum);
@@ -214,17 +214,15 @@ var GalleryByReactApp = React.createClass({
                 isCenter: false
             };
         });
-
         // 布局左右两侧的图片
-        for (var i = 0, j = imgsArrangeArr.length, k = j / 2; i < j; i++) {
+        for (var i = 0, j = imgsArrangeArr.length; i < j; i++) {
             var hPosRangeLORX = null;
             // 前半部分布局左边， 右半部分布局右边
-            if (i < k) {
+            if (Math.random() < 0.5) {
                 hPosRangeLORX = hPosRangeLeftSecX;
             } else {
                 hPosRangeLORX = hPosRangeRightSecX;
             }
-
             imgsArrangeArr[i] = {
                 pos: {
                     top: getRangeRandom(hPosRangeY[0], hPosRangeY[1]),
@@ -235,13 +233,16 @@ var GalleryByReactApp = React.createClass({
             };
 
         }
+        //上面代码为：位置信息处理和生成随机值
 
+        //下面的代码为重新合并数组
+        //把位于上侧区域的一张图片放回原来的位置
         if (imgsArrangeTopArr && imgsArrangeTopArr[0]) {
             imgsArrangeArr.splice(topImgSpliceIndex, 0, imgsArrangeTopArr[0]);
         }
-
+        //把中心位置的图片放回原来的位置
         imgsArrangeArr.splice(centerIndex, 0, imgsArrangeCenterArr[0]);
-
+        //设置state 可以触发重新渲染
         this.setState({
             imgsArrangeArr: imgsArrangeArr
         });
@@ -340,7 +341,8 @@ var GalleryByReactApp = React.createClass({
             }
 
             imgFigures.push(<ImgFigure key={index} data={value} ref={'imgFigure' + index}
-                                       arrange={this.state.imgsArrangeArr[index]} inverse={this.inverse(index)}
+                                       arrange={this.state.imgsArrangeArr[index]}
+                                       inverse={this.inverse(index)}
                                        center={this.center(index)}/>);
 
             controllerUnits.push(<ControllerUnit key={index} arrange={this.state.imgsArrangeArr[index]}
