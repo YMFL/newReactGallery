@@ -26,8 +26,8 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.DedupePlugin(),//
+    new webpack.optimize.UglifyJsPlugin(),//压缩输出
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.NoErrorsPlugin()

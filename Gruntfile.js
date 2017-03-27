@@ -105,7 +105,7 @@ module.exports = function (grunt) {
       }
     }
   });
-
+  //本地开发任务
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'open:dist', 'connect:dist']);
@@ -118,7 +118,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('test', ['karma']);
-
+  //编译任务
   grunt.registerTask('build', ['clean', 'copy', 'webpack']);
 
   grunt.registerTask('default', []);

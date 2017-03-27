@@ -43,7 +43,7 @@ module.exports = {
     loaders: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: 'react-hot!babel-loader'// transpiling compiling
+      loader: 'react-hot!babel-loader'// transpiling compiling  从右向左执行
     }, {
       test: /\.less/,
       loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}!less-loader?outputStyle=expanded'
