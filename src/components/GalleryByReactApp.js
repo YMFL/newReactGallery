@@ -147,12 +147,6 @@ var GalleryByReactApp = React.createClass({
             topY: [0, 0]
         }
     },
-
-    /*
-     * 翻转图片
-     * @param index 传入当前被执行inverse操作的图片对应的图片信息数组的index值
-     * @returns {Function} 这是一个闭包函数, 其内return一个真正待被执行的函数
-     */
     inverse: function (index) {
         return function () {
             var imgsArrangeArr = this.state.imgsArrangeArr;
