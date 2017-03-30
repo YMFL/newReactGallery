@@ -361,5 +361,4 @@ var GalleryByReactApp = React.createClass({
 
 });
 React.render(<GalleryByReactApp />, document.getElementById('content')); // jshint ignore:line
-
 module.exports = GalleryByReactApp;
