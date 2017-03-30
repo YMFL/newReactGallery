@@ -31,5 +31,3 @@ node_modules/
 .tmp
 dist
 /src/main.js
-/.idea
-.idea/
