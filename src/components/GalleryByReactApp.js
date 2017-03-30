@@ -37,7 +37,6 @@ function get30DegRandom() {
 }
 
 var ImgFigure = React.createClass({
-
     /*
      * imgFigure 的点击处理函数
      */
@@ -356,5 +355,4 @@ var GalleryByReactApp = React.createClass({
 
 });
 React.render(<GalleryByReactApp />, document.getElementById('content')); // jshint ignore:line
-
 module.exports = GalleryByReactApp;
