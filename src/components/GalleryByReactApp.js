@@ -37,7 +37,6 @@ function get30DegRandom() {
 }
 
 var ImgFigure = React.createClass({
-
     /*
      * imgFigure 的点击处理函数
      */
