@@ -240,7 +240,6 @@ var GalleryByReactApp = React.createClass({
             imgsArrangeArr: imgsArrangeArr
         });
     },
-
     /*
      * 利用arrange函数， 居中对应index的图片
      * @param index, 需要被居中的图片对应的图片信息数组的index值
@@ -251,7 +250,6 @@ var GalleryByReactApp = React.createClass({
             this.rearrange(index);
         }.bind(this);
     },
-
     getInitialState: function () {
         return {
             imgsArrangeArr: [
@@ -267,7 +265,6 @@ var GalleryByReactApp = React.createClass({
             ]
         };
     },
-
     // 组件加载以后， 为每张图片计算其位置的范围
     componentDidMount: function () {
 
@@ -311,10 +308,10 @@ var GalleryByReactApp = React.createClass({
         //
         this.Constant.vPosRange.x[0] = halfStageW - imgW;
         this.Constant.vPosRange.x[1] = halfStageW;
-        this.rearrange(0);
+        // Math.floor( Math.random( ) * imageDatas.length )
 
+        this.rearrange(Math.floor(Math.random() * imageDatas.length));
     },
-
     render: function () {
         var controllerUnits = [],
             imgFigures = [];
