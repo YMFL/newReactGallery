@@ -19,6 +19,7 @@ npm install -g yo
 ```
 npm install -g generator-react-webpack@1.2.11
 ```
+
 3.自动化创建
 ```
 mkdir filename && cd filename
