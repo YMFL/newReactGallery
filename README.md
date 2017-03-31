@@ -1,4 +1,16 @@
-## 项目自动化建立
+## 代码示例
+
+建立本地的例子,运行:
+```
+npm install
+grunt serve
+```
+
+Then open [`http://localhost:8000/webpack-dev-server/`](http://localhost:8000/webpack-dev-server/) in a browser.
+
+
+
+## 项目自动化建立（如果想要自己创建项目，可以参考下面的方法）
 1.安装yeoman自动化构建工具
 ```
 npm install -g yo
@@ -16,12 +28,3 @@ yo react-webpack
 ```
 npm install less-loader --save-dev
 ```
-## 代码示例
-
-建立本地的例子,运行:
-```
-npm install
-grunt serve
-```
-
-Then open [`http://localhost:8000/webpack-dev-server/`](http://localhost:8000/webpack-dev-server/) in a browser.
