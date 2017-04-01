@@ -142,9 +142,9 @@ var GalleryByReactApp = React.createClass({
                  left: '0',
                  top: '0'
                  },
-                 rotate: 0,    // 旋转角度
+                 rotate: 0,           // 旋转角度
                  isInverse: false,    // 图片正反面
-                 isCenter: false,    // 图片是否居中
+                 isCenter: false,     // 图片是否居中
                  }*/
             ]
         };
