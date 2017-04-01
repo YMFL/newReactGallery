@@ -2,7 +2,6 @@
  * Created by yangqh on 2017/4/1.
  */
 var React = require('react/addons');
-require('../styles/controllerUtils.less');
 // 控制组件
 var ControllerUnit = React.createClass({
     handleClick: function (e) {

@@ -4,9 +4,8 @@ var React = require('react/addons');
 var { getRangeRandom, get30DegRandom, genImageURL} = require('../Util/util');
 var ControllerUnit = require('./ControllerUnit');
 var ImgFigure = require('./ImgFigure');
-// CSS
-require('normalize.css');
-require('../styles/main.less');
+// less
+require('../styles/style.less');
 
 // 获取图片相关的数据
 var imageDatas = require('../data/imageDatas.json');
