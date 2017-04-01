@@ -2,6 +2,7 @@
  * Created by yangqh on 2017/4/1.
  */
 var React = require('react/addons');
+require('../styles/ImgFigure.less');
 var ImgFigure = React.createClass({
     /*
      * imgFigure 的点击处理函数

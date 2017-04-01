@@ -2,6 +2,7 @@
  * Created by yangqh on 2017/4/1.
  */
 var React = require('react/addons');
+require('../styles/controllerUtils.less');
 // 控制组件
 var ControllerUnit = React.createClass({
     handleClick: function (e) {
@@ -17,7 +18,7 @@ var ControllerUnit = React.createClass({
         e.stopPropagation();
     },
     render: function () {
-        var controlelrUnitClassName = '0controller-unit';
+        var controlelrUnitClassName = 'controller-unit';
 
         // 如果对应的是居中的图片，显示控制按钮的居中态
         if (this.props.arrange.isCenter) {
