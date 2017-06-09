@@ -2,6 +2,7 @@
 
 建立本地的例子,运行:
 ```
+npm install grunt-cli -g
 npm install
 grunt serve
 ```
